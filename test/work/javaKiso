@@ -1,0 +1,7 @@
+public class kadai1{
+    public static void main(String args[]){
+        String greeting = "Hello";
+        System.out.println(初めての課題);
+        System.out.println(java攻略への道)
+    }
+}
