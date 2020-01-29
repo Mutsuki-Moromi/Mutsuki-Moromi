@@ -14,7 +14,7 @@ public class task2 {
         
         int c;
 		c = ( 10 + 12 + 13 ); 
-        
+
         System.out.println("平均(3.0で割った時):" + ( c / d ) );
        
 	}
