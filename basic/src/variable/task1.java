@@ -5,7 +5,7 @@ public class task1 {
 		double a =31.2;
 		System.out.println(a);
 
-		String c = "jaba研修";
+		String c = "java研修";
 		System.out.println(c);
 
 		int b = 9;
