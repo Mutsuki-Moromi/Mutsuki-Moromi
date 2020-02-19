@@ -1,8 +1,0 @@
-public class kadai1{
-    public static void main(String args[]){
-        String greeting = "Hello";
-        /誤理由：hogehogeの後ろに；が入っていない為
-        System.out.println(hogehoge);
-        System.out.println(hogehoge)
-    }
-}
