@@ -1,6 +1,6 @@
-package basic;
+package variable;
 
-public class task3 {
+public class task1 {
 	public static void main(String[] args) {
 		double a =31.2;
 		System.out.println(a);
