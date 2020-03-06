@@ -15,29 +15,18 @@ public class task7 {
 		 * その他の文字列が入力された場合は以下を出力
 		 * “入力を確認してください”
 		 */
-
 		System.out.println("病院に行く日を入力してください");
 		System.out.println("日曜,月曜,火曜,水曜,木曜,金曜,土曜");
 
 		Scanner str = new Scanner(System.in);
 		String day = str.nextLine();
-
-
-		//↓switch文ここから
+		
 		String strl = day;
 		switch(day){
 			case "月曜":
-				System.out.println("午後診療と午前診療があります");
-				break;
 			case "火曜":
-				System.out.println("午後診療と午前診療があります");
-				break;
 			case "水曜":
-				System.out.println("午後診療と午前診療があります");
-				break;
 			case "木曜":
-				System.out.println("午後診療と午前診療があります");
-				break;
 			case "金曜":
 				System.out.println("午後診療と午前診療があります");
 				break;
@@ -47,12 +36,6 @@ public class task7 {
 			case "日曜":
 				System.out.println("日曜は休診です");
 				break;
-
-
-			}
-
-
-		//↑switch文ここまで
+		}
 	}
-
 }
