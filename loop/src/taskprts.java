@@ -1,21 +1,18 @@
-package loop;
+import java.util.Scanner;
 
-public class taskprts {
+public class taskprts  {
+    public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
 
-	public static void main(String[] args) {
-		// 練習用
-		for(int i = 1; i <= 100; i++) {
-			if(i % 3 == 0 && i % 5 == 0) {
-				System.out.println("FizzBuzz");
-			}else if(i % 3 == 0){
-				System.out.println("Fizz");
-			}else if(i % 5 == 0){
-				System.out.println("Buzz");
-			}else{
-				System.out.println(i);
-			}
-		}
+        System.out.print("数字を入力してください：");
+        int n = stdIn.nextInt();
 
-	}
+        int keta = 0;
+        while(n > 0){
+            keta ++;
+            n = n / 10;
+        }
+        System.out.println("桁数：" + keta);
 
+    }
 }
