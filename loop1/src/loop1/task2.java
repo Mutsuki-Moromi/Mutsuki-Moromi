@@ -1,3 +1,5 @@
+package loop1;
+
 import java.util.Scanner;
 
 /*

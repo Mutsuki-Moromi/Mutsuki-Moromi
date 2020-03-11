@@ -1,3 +1,5 @@
+package loop1;
+
 import java.util.Scanner;
 
 /*標準入力で整数を受け取り、その桁数を表示する
@@ -15,12 +17,17 @@ import java.util.Scanner;
 public class task3 {
 
 	public static void main(String[] args) {
-		System.out.print("数字を入力してください：");
-		System.out.println("桁数：");
-		
-		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
-			
-	}
+        Scanner stdIn = new Scanner(System.in);
 
+        System.out.print("数字を入力してください：");
+        int N = stdIn.nextInt();
+
+        int digit = 0;
+        while(N > 0){
+            digit ++;
+            N = N / 10;
+        }
+        System.out.println("桁数：" + digit);
+
+    }
 }
