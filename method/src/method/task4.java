@@ -21,15 +21,9 @@ public class task4 {
 
 				if(Arrays.asList(array).contains("null")){
 	                   return true;
-	              }
-	              else{
+	              }else{
 	                   return false;
 	              }
-
-	        }
-	    	private static boolean nullcheck() {
-				return false;
-
 	    	}
 }
 
