@@ -2,14 +2,14 @@ package variable;
 
 public class task1 {
 	public static void main(String[] args) {
-		double a =31.2;
+		double a = 31.2;
 		System.out.println(a);
 
-		String c = "java研修";
-		System.out.println(c);
-
-		int b = 9;
+		String b = "java研修";
 		System.out.println(b);
+
+		int c = 9;
+		System.out.println(c);
 
 		long d = 2147483648L;
 		System.out.println(d);

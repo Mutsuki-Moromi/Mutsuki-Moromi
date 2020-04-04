@@ -2,7 +2,7 @@ package basic;
 
 public class task3 {
 	public static void main(String[] args) {
-		double a =31.2;
+		double a = 31.2;
 		System.out.println(a);
 
 		String c = "java研修";
@@ -17,5 +17,4 @@ public class task3 {
 		char e = '才';
 		System.out.println(e);
 	}
-
 }
