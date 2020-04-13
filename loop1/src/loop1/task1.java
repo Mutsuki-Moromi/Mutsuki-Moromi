@@ -19,13 +19,15 @@ import java.util.Scanner;
 public class task1 {
 
 	public static void main(String[] args) {
-		System.out.print("数字を入力してください：");
+		System.out.print("数字を入力してください: ");
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
+		sc.close();
+
 		int sum = 0;
-		for(int i=1;i<=N;i++) {
+		for(int i=1; i <= N; i++) {
 			sum += i;
-			}
-		System.out.println("1～" + N + "までの合計:" + sum);
+		}
+		System.out.println("1～" + N + "までの合計: " + sum);
 	}
 }

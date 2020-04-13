@@ -12,13 +12,14 @@
 package vrietyArray;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class task4 {
 
 	public static void main(String[] args) {
 		Integer data[] = {21,3,32,6,99,72,51,1,26,87,11,48,60,29,5,46,74,14,193,215,83};//21
-		ArrayList odd = new ArrayList();
-		ArrayList even = new ArrayList();
+		ArrayList<Integer> odd = new ArrayList<>();
+		ArrayList<Integer> even = new ArrayList<>();
 
 		for(int i : data) {
 			if(i % 2 == 0) {
@@ -27,7 +28,9 @@ public class task4 {
 				odd.add(i);
 			}
 		}
-		System.out.println("{偶数: =" + even + "," + "\r\n" +
-		"奇数: =" + odd + "}");
+		HashMap<String,ArrayList<Integer>>label = new HashMap<>();
+		label.put("偶数: ",even);
+		label.put("奇数: ",odd);
+		System.out.println(label);
 	}
 }

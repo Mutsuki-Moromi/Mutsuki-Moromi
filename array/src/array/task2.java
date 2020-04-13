@@ -14,21 +14,29 @@ public class task2 {
 
 	public static void main(String[] args) {
 		int num = 0;
-		int[] data = {7,6,5,4,3,2,1};
+		int[] data = new int[7];
+
+		data[0] = 1;
+		data[1] = 2;
+		data[2] = 3;
+		data[3] = 4;
+		data[4] = 5;
+		data[5] = 6;
+		data[6] = 7;
+
 		for(int i = 0; i < data.length; i++) {
 			  if(i != num) {
 				System.out.print(",");
 			  }
-				System.out.print(data[i]);
+			  System.out.print(data[i]);
 		}
 		int sum = 6;
-				System.out.println();
+		System.out.println();
 		for(int i = data.length-1; i >= 0; i--) {
-			if(i == sum) {
-			}else if(i != sum){
+			if(i != sum) {
 				System.out.print(",");
 			}
-				System.out.print(data[i]);
+			System.out.print(data[i]);
 		}
 	}
 }

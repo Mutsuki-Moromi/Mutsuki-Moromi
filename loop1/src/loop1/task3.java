@@ -17,17 +17,17 @@ import java.util.Scanner;
 public class task3 {
 
 	public static void main(String[] args) {
-        Scanner stdIn = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.print("数字を入力してください：");
-        int N = stdIn.nextInt();
+        System.out.print("数字を入力してください: ");
+        int N = sc.nextInt();
+        sc.close();
 
         int digit = 0;
         while(N > 0){
             digit ++;
             N = N / 10;
         }
-        System.out.println("桁数：" + digit);
-
+        System.out.println("桁数: " + digit);
     }
 }

@@ -20,15 +20,15 @@ public class task3 {
 
 	public static void main(String[] args) {
 		HashMap<String,Integer> price = new HashMap<>();
-		price.put("りんご:",130);
-		price.put("みかん:",120);
-		price.put("バナナ:",98);
-		price.put("メロン:",6000);
+		price.put("りんご",130);
+		price.put("みかん",120);
+		price.put("バナナ",98);
+		price.put("メロン",6000);
 
 		char i = '円';
 		// 拡張for文を使用
 		for(HashMap.Entry<String,Integer> entry : price.entrySet()) {
-				System.out.println(entry.getKey() + entry.getValue() + i);
+			System.out.println(entry.getKey() + ":" + entry.getValue() + i);
 		}
 
 	}

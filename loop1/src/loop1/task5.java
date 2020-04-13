@@ -9,13 +9,11 @@ package loop1;
 public class task5 {
 
 	public static void main(String[] args) {
-		for(int i = 1;i <= 9;i++) {
-			for(int r = 1;r <= 9;r++) {
-				System.out.print(i*r+" ");
+		for(int i = 1; i <= 9; i++) {
+			for(int r = 1; r <= 9; r++) {
+				System.out.printf("%2d ", i * r);
 			}
 				System.out.println();
 		}
-
 	}
-
 }

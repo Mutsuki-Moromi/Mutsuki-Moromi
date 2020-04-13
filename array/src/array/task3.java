@@ -7,29 +7,42 @@
  * 値の生成にはRandomクラスを用いること
  * 分岐処理を用いて","区切りの制御をすること
  * 【実行結果】
- * {6,2,6,0,2,9}
+ * 6,2,6,0,2,9
  * 最大値:9
  * 最小値:0
  */
 package array;
 
+import java.util.Random;
+
 public class task3 {
 
 	public static void main(String[] args) {
-		int[] array = {6,2,6,0,2,9};
+		//int型の配列に0～9までのランダムな値を格納
+		int[] array = new int[6];
+		Random random = new Random();
+		for(int i = 0; i < 6; i++) {
+			array[i] = random.nextInt(10);
+			if(i == 5) {
+				System.out.print(array[i]);
+			}else {
+				System.out.print(array[i] + ",");
+		}
+		}
+
+		System.out.println();
 		int max = array[0];
 		int min = array[0];
 
-		for(int i = 1;i <array.length;i++) {
-			if(array[i] > max) {
-				max = array[i];
+		for(int j = 1; j <array.length; j++) {
+			if(array[j] > max) {
+				max = array[j];
 			}
-			if(array[i] < min) {
-				min = array[i];
+			if(array[j] < min) {
+				min = array[j];
 			}
 		}
-			System.out.println("最大値:" + max);
-			System.out.println("最小値:" + min);
+		System.out.println("最大値: " + max);
+		System.out.println("最小値: " + min);
 	}
-
 }
