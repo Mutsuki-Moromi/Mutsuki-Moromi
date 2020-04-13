@@ -13,27 +13,21 @@ import java.util.Scanner;
 public class task5 {
 
 	public static void main(String[] args) {
-		Scanner kazu1 = new Scanner(System.in);
-		int num1 = kazu1.nextInt();
-		Scanner kazu2 = new Scanner(System.in);
-		int num2 = kazu2.nextInt();
-		Scanner kazu3 = new Scanner(System.in);
-		int num3 = kazu3.nextInt();
-		
-		if(num1 <= 0 || num2 <= 0 || num3 <= 0)
-		    System.out.println("正の数を入力してください");
-		
+		Scanner sc = new Scanner(System.in);
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
 			System.out.println(num1);
-			System.out.println(num2);
-			System.out.println(num3);
-		
+		    System.out.println(num2);
+		    System.out.println(num3);
+
 		if(num1 > num2 && num1 > num3) {
-			System.out.print("最大値：" + num1);	
+			System.out.print("最大値：" + num1);
 		}else if(num2 > num3){
 			System.out.print("最大値：" + num2);
 		}else{
 			System.out.print("最大値：" + num3);
 		}
+		sc.close();
 	}
-
 }

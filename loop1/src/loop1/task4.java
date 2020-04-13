@@ -13,21 +13,27 @@ package loop1;
  * 整数を入力してください：24
  * 24の約数：1,2,4,6,8,12,24
  */
-
-
 import java.util.Scanner;
 
 public class task4 {
 
 	public static void main(String[] args) {
+		System.out.print("正の整数を入力してください: " );
 		Scanner sc = new Scanner(System.in);
-		System.out.print("正の整数を入力してください:" );
 		int N = sc.nextInt();
+		sc.close();
 
-    	for(int i=1;i <= N;i++) {
+		System.out.print(N + "の約数: ");
+    	for(int i = 1; i <= N; i++) {
     		if(N % i == 0) {
+    			if(N == i) {
+    			System.out.print(i);
+    		}else if(N != i) {
     			System.out.print(i + ",");
     		}
+
+    		}
+
     	}
 
 	}

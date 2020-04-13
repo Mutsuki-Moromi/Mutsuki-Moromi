@@ -16,18 +16,17 @@ import java.util.Scanner;
 public class task4 {
 
 	public static void main(String[] args) {
-		Scanner a = new Scanner(System.in);
-		Scanner b = new Scanner(System.in);
-		int numA = a.nextInt();
-		int numB = b.nextInt();
+		Scanner sc = new Scanner(System.in);
+		int numA = sc.nextInt();
+		int numB = sc.nextInt();
 
 	    if(numA <= 0 || numB <= 0){
 	    	System.out.println("正の数を入力してください");
 		}else if((numA % numB) == 0) {
-			System.out.print(numB + "が" + numA + "の約数です。");
+			System.out.print(numB + "は" + numA + "の約数です。");
 		}else {
 			System.out.println(numB + "は" + numA + "の約数ではありません");
 		}
-
+	    sc.close();
 	}
 }

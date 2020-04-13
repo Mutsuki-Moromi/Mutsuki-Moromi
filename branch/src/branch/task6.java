@@ -9,11 +9,11 @@ import java.util.Scanner;
 public class task6 {
 
 	public static void main(String[] args) {
-		Scanner kazu = new Scanner(System.in);
-		int num = kazu.nextInt();
-		
-		int sum = num;
-		switch(sum){
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		sc.close();
+
+		switch(num){
 			case 1:
 				System.out.println("I");
 				break;
@@ -32,7 +32,6 @@ public class task6 {
 			default:
 				System.out.println("unknown");
 				break;
-			}
 		}
-	
 	}
+}
