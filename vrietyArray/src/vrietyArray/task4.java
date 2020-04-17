@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class task4 {
 
 	public static void main(String[] args) {
-		Integer data[] = {21,3,32,6,99,72,51,1,26,87,11,48,60,29,5,46,74,14,193,215,83};//21
+		Integer data[] = {21,3,32,6,99,72,51,1,26,87,11,48,60,29,5,46,74,14,193,215,83};ss
 		ArrayList<Integer> odd = new ArrayList<>();
 		ArrayList<Integer> even = new ArrayList<>();
 

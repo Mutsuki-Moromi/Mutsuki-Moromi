@@ -4,7 +4,7 @@ public class task5a {
 	public static void main(String[] args) {
 		String str = "cat_mouse_mouse_cat_cat";
 		animals(str);
-		
+
 	}
 	public static void animals(String str) {
 		String[] strAry = str.split("_");
@@ -17,15 +17,15 @@ public class task5a {
 				count++;
 			}else if(judge.equals(mouse)) {
 				countB++;
-			}	
+			}
 		}
 			if(count > countB) {
 				System.out.println("catの方が多い");
-				return 
+				return;
 			}else{
 				System.out.println("mouseの方が多い");
+				return;
 			}
-
 	}
 
 }
